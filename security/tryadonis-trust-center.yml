@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://trust.adonis.io/
+url: https://trust.adonis.io/
+legal_entity: Adonis Technology, Inc.
+certifications: []
+notes: >-
+  Verified live: trust.adonis.io returns HTTP 200 with the title "Adonis
+  Technology, Inc. Trust Center". The certification list is rendered
+  client-side (SafeBase-style trust portal) and is not present in the static
+  HTML, so specific certifications (likely SOC 2 / HIPAA for a healthcare RCM
+  vendor) could not be verified from the page source and are intentionally left
+  empty rather than assumed. Re-run with a JS-capable fetch to enumerate certs.
+evidence:
+- source: https://trust.adonis.io/
+  kind: trust-center
+  detail: 'HTTP 200; <title>Adonis Technology, Inc. Trust Center</title>'

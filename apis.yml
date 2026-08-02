@@ -1,8 +1,27 @@
 aid: tryadonis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tryadonis.png
 name: Tryadonis
-description: 'Tryadonis is a company surfaced as a portfolio company of homebrew and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Adonis (Adonis Technology, Inc., tryadonis.com redirects to adonis.io) is a
+  healthcare revenue cycle management (RCM) software company that applies AI to
+  medical billing. Its platform connects in real time with a practice's existing
+  EHR, practice-management, billing, and patient-portal systems to surface
+  revenue-related insights, automate claims and billing workflows, and reduce
+  manual work for revenue teams. The company is backed by Homebrew. This is a
+  B2B SaaS product with a private, authenticated product API (api.adonis.io) and
+  a customer app (app.adonis.io); it does not currently operate a public
+  developer program, OpenAPI documentation, or API portal.
 url: https://raw.githubusercontent.com/api-evangelist/tryadonis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Healthcare
+- Revenue Cycle Management
+- Medical Billing
+- Health Tech
+- SaaS
+- Claims
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tryadonis-domain-security.yml
+- type: TrustCenter
+  url: security/tryadonis-trust-center.yml
 - type: Website
-  url: https://www.tryadonis.com
+  url: https://adonis.io/
+- type: Blog
+  url: https://adonis.io/blog
+- type: PrivacyPolicy
+  url: https://adonis.io/privacy-policy
+- type: SignUp
+  url: https://adonis.io/request-a-demo
+- type: Support
+  url: https://adonis.io/contact
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
